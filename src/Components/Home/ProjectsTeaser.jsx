@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'TechNova Redesign',
-    image: '/images/1.webp',
+    image: '/images/1.jpg',
     description:
       'We helped TechNova boost engagement by 48% with a new brand and platform.',
   },
   {
     title: 'GlowCare Mobile App',
-    image: '/images/2.webp',
+    image: '/images/2.jpg',
     description:
       'Designed a smooth, wellness-first mobile app experience with React Native.',
   },
   {
     title: 'NovaFin Dashboard UI',
-    image: '/images/3.webp',
+    image: '/images/3.jpg',
     description:
       'Created a dashboard interface with real-time charts for a fintech client.',
   },

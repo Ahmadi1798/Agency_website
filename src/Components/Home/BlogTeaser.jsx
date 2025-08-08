@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const posts = [
   {
     title: 'The Power of Purposeful Design',
-    image: '/blogs/1.webp',
+    image: '/blogs/1.jpg',
     date: 'May 2025',
     link: '#',
     description:
@@ -11,7 +11,7 @@ const posts = [
   },
   {
     title: 'Top 5 Tools We Use to Build Scalable Websites',
-    image: '/blogs/2.webp',
+    image: '/blogs/2.jpg',
     date: 'April 2025',
     link: '#',
     description:
@@ -19,7 +19,7 @@ const posts = [
   },
   {
     title: 'Why Every Brand Needs a Design System',
-    image: '/blogs/3.webp',
+    image: '/blogs/3.jpg',
     date: 'March 2025',
     link: '#',
     description:
