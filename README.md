@@ -1,12 +1,70 @@
-# React + Vite
+# KarFamSoft Agency Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and professional agency website built with **React** and **Vite**. This project showcases KarFamSoft’s digital services, portfolio, blog, and contact options, designed for high performance, accessibility, and SEO.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Beautiful Hero Sections:** Eye-catching gradients, animated text, and responsive layouts.
+- **Services & Portfolio:** Professionally styled cards, optimized images (WebP), and semantic markup for SEO.
+- **Blog:** Insights, strategies, and tips with structured data for better discoverability.
+- **Contact Page:** Accessible form, social links, and agency details.
+- **Responsive Design:** Mobile-first layouts using Tailwind CSS.
+- **Dark Mode:** Seamless theme switching for user comfort.
+- **Performance Optimized:** Lazy-loaded images, code splitting, and minimal bundle size.
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) (animations)
+- [React Router](https://reactrouter.com/) (routing)
+- [WebP Images](https://developers.google.com/speed/webp) (optimized assets)
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Ahmadi1798/Agency-website.git
+   cd Agency-website
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Folder Structure
+
+- `/src/Components` – Reusable UI components (Navbar, Footer, Hero, etc.)
+- `/src/Pages` – Main pages (Home, Portfolio, Blog, Contact)
+- `/public/images` – Optimized WebP images
+
+## Deployment
+
+This site is ready for deployment on [Vercel](https://vercel.com/) or any static hosting provider.
+
+## Contributing
+
+Pull requests and suggestions are welcome! Please open an issue for major changes.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+**KarFamSoft Agency** – Elevate your brand with exceptional

@@ -5,7 +5,7 @@ const posts = [
     title: 'The Power of Purposeful Design',
     excerpt:
       'How intentional design choices improve user engagement and brand trust.',
-    image: '/blogs/1.webp',
+    image: '/blogs/1.jpg',
     datePublished: '2025-05-01',
     date: 'May 2025',
     link: '#',
@@ -13,7 +13,7 @@ const posts = [
   {
     title: 'Top 5 Tools We Use to Build Scalable Websites',
     excerpt: 'From design to deployment, here’s our go-to tech stack in 2025.',
-    image: '/blogs/2.webp',
+    image: '/blogs/2.jpg',
     datePublished: '2025-04-01',
     date: 'April 2025',
     link: '#',
@@ -22,7 +22,7 @@ const posts = [
     title: 'Why Every Brand Needs a Design System',
     excerpt:
       'A design system is more than visuals — it’s your brand’s operating manual.',
-    image: '/blogs/3.webp',
+    image: '/blogs/3.jpg',
     datePublished: '2025-03-01',
     date: 'March 2025',
     link: '#',
@@ -31,7 +31,7 @@ const posts = [
     title: 'Dark Mode Design: Tips for Better UX',
     excerpt:
       'How to design inclusive, legible, and stylish dark interfaces in 2025.',
-    image: '/blogs/4.webp',
+    image: '/blogs/4.jpg',
     datePublished: '2025-02-01',
     date: 'February 2025',
     link: '#',
@@ -40,7 +40,7 @@ const posts = [
     title: 'How We Approach Mobile-First Design',
     excerpt:
       'Learn why starting with mobile changes the way we build for the web.',
-    image: '/blogs/5.webp',
+    image: '/blogs/5.jpg',
     datePublished: '2025-01-01',
     date: 'January 2025',
     link: '#',
@@ -49,7 +49,7 @@ const posts = [
     title: 'Web Performance in 2025: What Actually Matters',
     excerpt:
       'Speed, accessibility, and user flow — the new performance checklist.',
-    image: '/blogs/6.webp',
+    image: '/blogs/6.jpg',
     datePublished: '2024-12-01',
     date: 'December 2024',
     link: '#',

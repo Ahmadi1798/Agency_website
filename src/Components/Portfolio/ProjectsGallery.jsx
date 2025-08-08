@@ -3,37 +3,37 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'TechNova Redesign',
-    image: '/images/1.webp',
+    image: '/images/1.jpg',
     description:
       'Full website redesign + SEO optimization. Increased engagement by 48%.',
   },
   {
     title: 'GlowCare App UI',
-    image: '/images/2.webp',
+    image: '/images/2.jpg',
     description:
       'Mobile app design for a wellness startup. Built with Figma + React Native.',
   },
   {
     title: 'NovaFin Dashboard',
-    image: '/images/3.webp',
+    image: '/images/3.jpg',
     description:
       'Custom dashboard UI with Tailwind and chart integrations for a fintech product.',
   },
   {
     title: 'Brand Identity for Clover',
-    image: '/images/4.webp',
+    image: '/images/4.jpg',
     description:
       'Logo, typography, and print collateral for a sustainable clothing brand.',
   },
   {
     title: 'Analytics Dashboard for InsightPro',
-    image: '/images/5.webp',
+    image: '/images/5.jpg',
     description:
       'Custom admin panel with live data integration and KPIs for executives.',
   },
   {
     title: 'UX Collaboration Platform',
-    image: '/images/6.webp',
+    image: '/images/6.jpg',
     description:
       'Built a real-time interface for designers and PMs to co-edit mockups.',
   },
