@@ -57,6 +57,24 @@ A modern, responsive, and professional agency website built with **React** and *
 
 This site is ready for deployment on [Vercel](https://vercel.com/) or any static hosting provider.
 
+## Working with a Local Coding Agent
+
+If you're using a local AI coding assistant (GitHub Copilot, Cursor, Continue, or similar) to implement the planned phases, start here:
+
+1. **Read [`docs/agent-onboarding.md`](docs/agent-onboarding.md)** — learn how to inspect the project, define milestones, and validate every change.
+2. **Use [`docs/implementation-prompts.md`](docs/implementation-prompts.md)** — copy-paste ready prompts for each phase (design system, customization engine, admin panel).
+3. **Check available scripts** before prompting the agent:
+
+   ```bash
+   npm run dev       # start dev server at http://localhost:5173
+   npm run build     # production build — must pass before merging
+   npm run lint      # ESLint — must pass before merging
+   npm run typecheck # type check (placeholder until TypeScript is added)
+   npm run test      # run tests (placeholder until Vitest is added)
+   ```
+
+4. **Follow the branch strategy** in [CONTRIBUTING.md](CONTRIBUTING.md): one feature branch per phase, small reviewable commits.
+
 ## Contributing & Documentation
 
 Pull requests and suggestions are welcome! Please open an issue for major changes.
@@ -66,6 +84,8 @@ Pull requests and suggestions are welcome! Please open an issue for major change
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Workflow, branch strategy, commit conventions, PR checklist |
 | [docs/local-setup.md](docs/local-setup.md) | Step-by-step local dev setup (VS Code, Node.js, database) |
 | [docs/roadmap.md](docs/roadmap.md) | Phased implementation plan (redesign → customization → admin panel) |
+| [docs/agent-onboarding.md](docs/agent-onboarding.md) | How to use a local AI agent to implement phases safely |
+| [docs/implementation-prompts.md](docs/implementation-prompts.md) | Copy-paste prompt templates for each implementation phase |
 
 ## License
 

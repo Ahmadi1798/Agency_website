@@ -8,6 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "typecheck": "echo \"No TypeScript config yet. Add tsconfig.json to enable type checking.\" && exit 0",
+    "test": "echo \"No test framework installed yet. See docs/implementation-prompts.md — 'Write a Component Test' prompt to add Vitest.\" && exit 0",
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
