@@ -57,9 +57,15 @@ A modern, responsive, and professional agency website built with **React** and *
 
 This site is ready for deployment on [Vercel](https://vercel.com/) or any static hosting provider.
 
-## Contributing
+## Contributing & Documentation
 
 Pull requests and suggestions are welcome! Please open an issue for major changes.
+
+| Document | Description |
+|---|---|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Workflow, branch strategy, commit conventions, PR checklist |
+| [docs/local-setup.md](docs/local-setup.md) | Step-by-step local dev setup (VS Code, Node.js, database) |
+| [docs/roadmap.md](docs/roadmap.md) | Phased implementation plan (redesign → customization → admin panel) |
 
 ## License
 
