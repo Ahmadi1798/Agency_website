@@ -57,6 +57,7 @@ A modern, responsive, and professional agency website built with **React** and *
 
 This site is ready for deployment on [Vercel](https://vercel.com/) or any static hosting provider.
 
+<<<<<<< HEAD
 ## Working with a Local Coding Agent
 
 If you're using a local AI coding assistant (GitHub Copilot, Cursor, Continue, or similar) to implement the planned phases, start here:
@@ -74,6 +75,20 @@ If you're using a local AI coding assistant (GitHub Copilot, Cursor, Continue, o
    ```
 
 4. **Follow the branch strategy** in [CONTRIBUTING.md](CONTRIBUTING.md): one feature branch per phase, small reviewable commits.
+=======
+## Phase 1 Quick Start
+
+Ready to start the modern redesign? Use these two docs to guide your local
+VS Code agent through Phase 1 step-by-step:
+
+| Document | Description |
+|---|---|
+| [docs/phase1-first-5-prompts.md](docs/phase1-first-5-prompts.md) | Five copy-paste prompts for your local AI agent (repo analysis → tokens → components → Hero migration → QA) |
+| [docs/phase1-checklist.md](docs/phase1-checklist.md) | Verification checklist to tick after each prompt and before merging |
+
+**Workflow:** run each prompt in VS Code Copilot Chat, verify the checklist,
+commit, then move to the next prompt. Branch: `feature/design-system`.
+>>>>>>> origin/main
 
 ## Contributing & Documentation
 
