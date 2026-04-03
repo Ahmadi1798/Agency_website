@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "flowbite-react patch"
+    "dev": "./node_modules/.bin/vite",
+    "build": "./node_modules/.bin/vite build",
+    "lint": "./node_modules/.bin/eslint .",
+    "preview": "./node_modules/.bin/vite preview",
+    "postinstall": "./node_modules/.bin/flowbite-react patch"
   },
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
