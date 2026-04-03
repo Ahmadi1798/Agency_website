@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { X, Menu, Moon, Sun } from 'lucide-react';
 import { links } from '../../utils/Links';
-import { Link, NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTheme } from '../context/ThemeContext';
-import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const location = useLocation();
-  const isAboutPage = location.pathname === '/about';
+  const pathname = usePathname();
+  const isAboutPage = pathname === '/about';
   const { isDark, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
       >
         <div className="max-w-screen-2xl mx-auto flex justify-between items-center gap-8">
           {/* Logo */}
-          <Link to="/" aria-label="KarFamSoft Home">
+          <Link href="/" aria-label="KarFamSoft Home">
             <span className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent tracking-tight drop-shadow-lg select-none transition-transform duration-300 hover:scale-105">
               KarFamSoft
             </span>
@@ -51,12 +51,12 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <ul className="hidden md:flex space-x-10 items-center text-base font-semibold">
             {links.map(({ text, path }) => (
-              <NavLink
+              <Link
                 key={text}
-                to={path}
-                className={({ isActive }) =>
+                href={path}
+                className={
                   `transition-colors duration-200 px-2 py-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:text-indigo-600 ${
-                    isActive
+                    pathname === path
                       ? 'text-indigo-600 bg-indigo-50 dark:bg-indigo-900'
                       : 'text-gray-700 dark:text-gray-300'
                   }`
@@ -64,13 +64,13 @@ const Navbar = () => {
                 aria-label={text}
               >
                 {text}
-              </NavLink>
+              </Link>
             ))}
           </ul>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/contact" aria-label="Contact KarFamSoft">
+            <Link href="/contact" aria-label="Contact KarFamSoft">
               <button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg text-base font-semibold shadow transition focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 Contact
               </button>
@@ -105,13 +105,13 @@ const Navbar = () => {
           }`}
         >
           {links.map(({ text, path }) => (
-            <NavLink
+            <Link
               key={text}
-              to={path}
+              href={path}
               onClick={handleMenuToggle}
-              className={({ isActive }) =>
+              className={
                 `block text-base font-semibold px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors ${
-                  isActive
+                  pathname === path
                     ? 'text-indigo-600 bg-indigo-50 dark:bg-indigo-900'
                     : 'text-gray-700 dark:text-gray-300'
                 }`
@@ -119,9 +119,9 @@ const Navbar = () => {
               aria-label={text}
             >
               {text}
-            </NavLink>
+            </Link>
           ))}
-          <Link to="/contact" aria-label="Contact KarFamSoft">
+          <Link href="/contact" aria-label="Contact KarFamSoft">
             <button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-2 rounded-lg text-base font-semibold mt-4 shadow focus:outline-none focus:ring-2 focus:ring-indigo-500">
               Contact
             </button>

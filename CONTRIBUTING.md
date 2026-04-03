@@ -90,7 +90,7 @@ Quick reference:
 # Install dependencies
 npm install
 
-# Start dev server (http://localhost:5173)
+# Start dev server (http://localhost:3000)
 npm run dev
 
 # Lint the codebase
@@ -99,8 +99,8 @@ npm run lint
 # Production build
 npm run build
 
-# Preview production build locally
-npm run preview
+# Start production build locally
+npm run start
 ```
 
 ---

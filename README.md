@@ -1,6 +1,6 @@
 # KarFamSoft Agency Website
 
-A modern, responsive, and professional agency website built with **React** and **Vite**. This project showcases KarFamSoft’s digital services, portfolio, blog, and contact options, designed for high performance, accessibility, and SEO.
+A modern, responsive, and professional agency website built with **React** and **Next.js App Router**. This project showcases KarFamSoft’s digital services, portfolio, blog, and contact options, designed for high performance, accessibility, and SEO.
 
 ## Features
 
@@ -15,10 +15,9 @@ A modern, responsive, and professional agency website built with **React** and *
 ## Technologies
 
 - [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
+- [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/) (animations)
-- [React Router](https://reactrouter.com/) (routing)
 - [WebP Images](https://developers.google.com/speed/webp) (optimized assets)
 
 ## Getting Started
@@ -50,7 +49,8 @@ A modern, responsive, and professional agency website built with **React** and *
 ## Folder Structure
 
 - `/src/Components` – Reusable UI components (Navbar, Footer, Hero, etc.)
-- `/src/Pages` – Main pages (Home, Portfolio, Blog, Contact)
+- `/src/site-pages` – Page compositions used by App Router routes
+- `/src/app` – Next.js App Router routes and metadata
 - `/public/images` – Optimized WebP images
 
 ## Deployment

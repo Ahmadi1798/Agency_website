@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const AboutCTA = () => {
@@ -39,7 +39,7 @@ const AboutCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <Link to="/contact" aria-label="Contact KarFamSoft Agency">
+          <Link href="/contact" aria-label="Contact KarFamSoft Agency">
             <button className="inline-block bg-gradient-to-r from-white via-indigo-100 to-purple-200 text-indigo-700 font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-indigo-50 transition text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
               Contact Us
             </button>

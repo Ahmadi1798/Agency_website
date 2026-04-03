@@ -1,4 +1,3 @@
-import agencyVideo from '../../assets/videos/agency.mp4';
 import { motion } from 'framer-motion';
 
 const AboutHero = () => {
@@ -16,7 +15,7 @@ const AboutHero = () => {
         className="absolute w-full h-full object-cover top-0 left-0 z-0"
         aria-hidden="true"
       >
-        <source src={agencyVideo} type="video/mp4" />
+        <source src="/videos/agency.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

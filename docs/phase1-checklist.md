@@ -104,7 +104,8 @@ npm run dev
 npm run build
 
 # Preview the production build locally
-npm run preview
+# Start production build locally
+npm run start
 
 # Lint (if configured)
 npm run lint

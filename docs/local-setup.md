@@ -34,7 +34,7 @@ cd Agency_website
 npm install
 ```
 
-This installs React, Vite, Tailwind CSS, Framer Motion, and all other
+This installs React, Next.js, Tailwind CSS, Framer Motion, and all other
 dependencies listed in `package.json`.
 
 ---
@@ -45,7 +45,7 @@ dependencies listed in `package.json`.
 npm run dev
 ```
 
-Open your browser at **http://localhost:5173**. The page hot-reloads on every file save.
+Open your browser at **http://localhost:3000**. The page hot-reloads on every file save.
 
 ---
 
@@ -55,7 +55,7 @@ Open your browser at **http://localhost:5173**. The page hot-reloads on every fi
 |---|---|
 | `npm run dev` | Start local dev server with HMR |
 | `npm run build` | Build optimised production bundle |
-| `npm run preview` | Preview the production build locally |
+| `npm run start` | Run the production build locally |
 | `npm run lint` | Run ESLint on all source files |
 
 ---
@@ -158,8 +158,8 @@ Agency_website/
 │   ├── images/
 │   └── blogs/
 ├── src/
-│   ├── App.jsx          # Root component + routing
-│   ├── main.jsx         # React entry point
+│   ├── app/             # Next.js App Router routes
+│   ├── site-pages/      # Page compositions used by routes
 │   ├── index.css        # Global styles / Tailwind imports
 │   ├── Components/      # Reusable UI components
 │   │   ├── Home/
@@ -170,7 +170,6 @@ Agency_website/
 │   │   ├── Contact/
 │   │   ├── Navbar.jsx
 │   │   └── Footer.jsx
-│   ├── Pages/           # Page-level components (one per route)
 │   ├── context/         # React context (e.g. ThemeContext)
 │   └── assets/          # Images and videos imported by components
 ├── utils/               # Shared helpers (e.g. navigation links)
@@ -178,8 +177,8 @@ Agency_website/
 │   ├── local-setup.md   ← you are here
 │   └── roadmap.md
 ├── CONTRIBUTING.md
-├── vite.config.js
-├── tailwind.config.js   # (auto-generated / configured)
+├── next.config.mjs
+├── postcss.config.mjs
 └── package.json
 ```
 

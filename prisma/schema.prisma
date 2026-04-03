@@ -1,0 +1,122 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id               String           @id @default(cuid())
+  slug             String           @unique
+  name             String
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  siteSettings     SiteSettings?
+  pages            Page[]
+  mediaAssets      MediaAsset[]
+  navigationItems  NavigationItem[]
+  footerItems      FooterItem[]
+}
+
+model SiteSettings {
+  id               String   @id @default(cuid())
+  tenantId         String   @unique
+  brandName        String
+  logoUrl          String?
+  primaryColor     String?
+  secondaryColor   String?
+  accentColor      String?
+  fontHeading      String?
+  fontBody         String?
+  contactEmail     String?
+  contactPhone     String?
+  contactAddress   String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  tenant           Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+}
+
+model Page {
+  id               String        @id @default(cuid())
+  tenantId         String
+  slug             String
+  title            String
+  seoTitle         String?
+  seoDescription   String?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  tenant           Tenant        @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  sections         PageSection[]
+
+  @@unique([tenantId, slug])
+}
+
+model PageSection {
+  id               String         @id @default(cuid())
+  pageId           String
+  sectionKey       String
+  sectionType      String
+  orderIndex       Int
+  isVisible        Boolean        @default(true)
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  page             Page           @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  content          SectionContent?
+
+  @@unique([pageId, sectionKey])
+  @@unique([pageId, orderIndex])
+}
+
+model SectionContent {
+  id               String      @id @default(cuid())
+  pageSectionId    String      @unique
+  content          Json
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  pageSection      PageSection @relation(fields: [pageSectionId], references: [id], onDelete: Cascade)
+}
+
+model MediaAsset {
+  id               String   @id @default(cuid())
+  tenantId         String
+  name             String
+  url              String
+  type             String
+  mimeType         String?
+  sizeBytes        Int?
+  altText          String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  tenant           Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+}
+
+model NavigationItem {
+  id               String   @id @default(cuid())
+  tenantId         String
+  label            String
+  href             String
+  orderIndex       Int
+  isVisible        Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  tenant           Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, orderIndex])
+}
+
+model FooterItem {
+  id               String   @id @default(cuid())
+  tenantId         String
+  columnKey        String
+  label            String
+  href             String
+  orderIndex       Int
+  isVisible        Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  tenant           Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, columnKey, orderIndex])
+}

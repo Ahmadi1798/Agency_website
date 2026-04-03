@@ -143,7 +143,7 @@ To avoid breaking the live site at any stage:
 
 | Layer | Technology |
 |---|---|
-| Frontend | React + Vite → Next.js (App Router) |
+| Frontend | React + Next.js (App Router) |
 | Styling | Tailwind CSS v4 |
 | Database | PostgreSQL (self-managed, no subscription) |
 | ORM | Prisma |
@@ -151,9 +151,7 @@ To avoid breaking the live site at any stage:
 | Storage | Cloudflare R2 / AWS S3 / Supabase Storage |
 | Deployment | Vercel (frontend + API) + managed DB host |
 
-> The current codebase uses **React + Vite**. Migration to **Next.js** is
-> recommended before Phase 2 to support API routes and SSR for SEO, but it is
-> not strictly required for Phase 1.
+> The current codebase uses **React + Next.js (App Router)**.
 
 ---
 

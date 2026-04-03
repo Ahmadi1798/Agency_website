@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Button from '../ui/Button';
 import SectionContainer from '../ui/SectionContainer';
@@ -40,12 +40,12 @@ const HeroSection = () => {
             reality with creativity and technology.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link to="/portfolio" aria-label="View our portfolio">
+            <Link href="/portfolio" aria-label="View our portfolio">
               <Button variant="primary" size="md">
                 View Portfolio
               </Button>
             </Link>
-            <Link to="/contact" aria-label="Contact us">
+            <Link href="/contact" aria-label="Contact us">
               <Button variant="outline" size="md">
                 Contact Us
               </Button>
