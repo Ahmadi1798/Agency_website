@@ -2,51 +2,13 @@
 @import "tailwindcss";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
+@import "./styles/tokens.css";
 
 /* Set variables for light & dark mode */
 :root {
   font-family: "Poppins", sans-serif;
 }
 
-
-@theme {
-  /* ── Backgrounds ─────────────────────────────────── */
-  --color-primary: #FAFAFA;
-  --color-secondary: #FFFFFF;
-  --color-subtle-gray: #F3F4F6;
-
-  /* ── Text ────────────────────────────────────────── */
-  --color-primary-text: #111111;
-  --color-secondary-text: #6B7280;
-
-  /* ── Borders ─────────────────────────────────────── */
-  --color-border-color: #E5E7EB;
-
-  /* ── Brand / Accent ──────────────────────────────── */
-  --color-accent-blue: #2563EB;
-  --color-brand-indigo: #4F46E5;
-  --color-brand-purple: #7C3AED;
-  --color-brand-pink: #EC4899;
-
-  /* ── Interactive states ──────────────────────────── */
-  --color-brand-indigo-hover: #4338CA;
-  --color-brand-purple-hover: #6D28D9;
-
-  /* ── Shadows (as a design token helper) ─────────── */
-  --shadow-card: 0 4px 24px 0 rgba(79,70,229,0.08);
-  --shadow-card-hover: 0 8px 40px 0 rgba(79,70,229,0.16);
-
-  /* ── Border radius ───────────────────────────────── */
-  --radius-card: 1rem;
-  --radius-btn: 0.5rem;
-
-  /* ── Spacing scale additions ─────────────────────── */
-  --spacing-section: 5rem;
-
-  /* ── Typography ──────────────────────────────────── */
-  --font-sans: "Poppins", sans-serif;
-  --font-weight-heading: 800;
-}
 
 header {
   z-index: 10001 !important;

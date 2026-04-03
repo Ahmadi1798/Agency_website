@@ -1,0 +1,38 @@
+@theme {
+  /* Backgrounds */
+  --color-primary: #fafafa;
+  --color-secondary: #ffffff;
+  --color-subtle-gray: #f3f4f6;
+
+  /* Text */
+  --color-primary-text: #111111;
+  --color-secondary-text: #6b7280;
+
+  /* Borders */
+  --color-border-color: #e5e7eb;
+
+  /* Brand and accent */
+  --color-accent-blue: #2563eb;
+  --color-brand-indigo: #4f46e5;
+  --color-brand-purple: #7c3aed;
+  --color-brand-pink: #ec4899;
+
+  /* Interactive states */
+  --color-brand-indigo-hover: #4338ca;
+  --color-brand-purple-hover: #6d28d9;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px 0 rgba(79, 70, 229, 0.08);
+  --shadow-card-hover: 0 8px 40px 0 rgba(79, 70, 229, 0.16);
+
+  /* Radius */
+  --radius-card: 1rem;
+  --radius-btn: 0.5rem;
+
+  /* Spacing */
+  --spacing-section: 5rem;
+
+  /* Typography */
+  --font-sans: 'Poppins', sans-serif;
+  --font-weight-heading: 800;
+}
